@@ -106,7 +106,7 @@ const blog = [
 ];
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
